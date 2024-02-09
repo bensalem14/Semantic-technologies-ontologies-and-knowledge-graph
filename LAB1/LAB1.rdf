@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology/"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:orgOntology="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology">
+        <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#basedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#basedAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Site"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#changedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#changedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#originalOrganization"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#ChangeEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#classification -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#classification">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasMember">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#memberOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasMembership -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasMembership">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#member"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasPrimarySite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasPrimarySite">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasSite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasRegistredSite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasRegistredSite">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasSite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasSite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasSite">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#siteOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Site"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasSubOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasSubOrganization">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#subOrganizationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#hasUnit">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#unitOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#OrganizationalUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#headOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#headOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#memberOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#identifier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#identifier">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Literal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#linkedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#linkedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#member -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#member">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Membership"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#memberOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#organization -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#organization">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Membership"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Post"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#originalOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#originalOrganization"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#purpose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#purpose">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#reportsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#reportsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#resultedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#resultedFrom">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#resultingOrganization"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#ChangeEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#resultingOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#resultingOrganization"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#role -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#role">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Membership"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Post"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#roleProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#roleProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#siteAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#siteAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Site"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Resource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#siteOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#siteOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#subOrganizationOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#subOrganizationOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#unitOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#unitOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Agent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#ChangeEvent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#ChangeEvent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Concept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#FormalOrganization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#FormalOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Literal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Literal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Membership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Membership"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#OrganizationalCollaboration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#OrganizationalCollaboration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#OrganizationalUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#OrganizationalUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Post -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Post"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Property"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Resource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Role"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Site -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Site"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Cherid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Cherid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Agent"/>
+        <orgOntology:headOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#DE"/>
+        <orgOntology:memberOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Esi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#DE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#DE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+        <orgOntology:subOrganizationOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Esi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#DG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#DG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Post"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Esi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Esi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Organization"/>
+        <orgOntology:hasSubOrganization rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#DE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Koudil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Koudil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Agent"/>
+        <orgOntology:headOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Esi"/>
+        <orgOntology:memberOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Esi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Oued_smar_-Alger- -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Oued_smar_-Alger-">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Site"/>
+        <orgOntology:siteOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Esi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Direction_General_de_l&apos;ecole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Direction_General_de_l&apos;ecole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Role"/>
+        <orgOntology:role rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/10/orgOntology#Direction_General_de_l&apos;ecole"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

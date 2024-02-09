@@ -1,0 +1,2731 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Reading Report Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal>ReadingReport</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Addition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BookSection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Combination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comparaison"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConferencePaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Critique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Database"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Definition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Explanation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exploration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Idea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Improvement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Journal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JournalPaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KeyWord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Preprint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proof"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proposal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Review"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Survey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ExtendsOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#For"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ImrovesOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Into"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#aimsToProvide"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#citedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cites"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#compares"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#foundIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasKeyword"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubField"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPrequelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSequelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubFieldOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#keywordRelationship"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#paperRelationshipWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#provides"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#published"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#publishedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reviews"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sitedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tests"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#writtenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wrote"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SJRQuartile"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SJRScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#abstract"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#creationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#depositDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fullName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hIndex"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#impactFactor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#language"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#mainIdea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#paperType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#publishDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rank"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#summary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ACMDigitalLibrary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AIMagazine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#APPLICATIONS_OF_KNOWLEDGE_GRAPHS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aditya_Kalyanpur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antonis_Klironomos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Applications"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Baifan_Zhou"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BigSemantics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bosch_Center_for_Artificial_Intelligence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chaitanya_Baru"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CombiningKG_CV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CombiningKG_NLP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Combining_rdflib_ExeKGLib"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cycorp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DataScienceWorkFlow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Denny_Vrandecic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Douglas_B._Lenat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Elemental_Cognition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#European_Semantic_Web_Conference"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Evgeny_Kharlamov"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExeKGBLibWorkStepsExploration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExeKGLib"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExeKGLibTasks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExeKGLibTasksClassification"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExeKGLibTest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExeKGLibWorkSteps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExecutableGeneration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExecutableGenerationExplanation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FeatureEngineering"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gad-Elrab_Mohamed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GraphDatabases"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GraphKnowledgeBase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GraphKnowledgeBaseClassification"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Heiko_Paulheim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#History"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HumanCuration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HumanMachineCurationComparaison"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Human_curation_versus_machine_curation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Introduction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#James_Hendler"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Juan_Sequeda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KGApplicationClassification"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KGApplications"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KGDefinition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KNOWLEDGE_GRAPH_DEFINITION"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KnowledgeRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kuansan_Wang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LittleBigSemanticComparaison"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LittleSemantics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Little_semantics_versus_big_semantics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ML"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MLPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MLPipeLineExplainability"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MLPipeLineExplainabilityImprovement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MachineCuration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Machine_Learning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Michael_Genesereth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Microsoft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NLP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Naren_Chittar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norway"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ontologies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OpenKnowledgeNetwork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oslo_Metropolitan_University"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PipeLine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PipeLineExecution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PipeLineExecutionExplanation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PipelineExplanation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PipelineRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PythonLibrary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PythonLibraryProposal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RWTH_Aachen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Renssalear_Polytechnic_Institute"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Representing_information_for_AI_algorithms"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ResearchGate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SNDL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SN_KGComparaison"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SPARQL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SUMMARY_AND_CONCLUSION"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#San_Diego_Supercomputer_Center"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#San_diego"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SemanticNetworks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SemanticTecknologies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stanford_University"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StatisticPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SurveyOnKG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SymbolicRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SymbolicVectorRepresentationComparaison"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Symbolic_representation_versus_vector_representation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Taxonomies"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TripleStores"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#University_of_Mannheim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#University_of_Oslo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VectorRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VectorRepresentationLimitation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vinay_K._Chaudhri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VizPipeLine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vizualization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wikimedia_Foundation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Xin_Luna_Dong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zhipeng_Tan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zhuoxun_Zheng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#arXiv"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#data.world"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dataScienceWorkflowImprovement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#organizationOfInformation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rdflib"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#representationOfInformation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1002/aaai.12038"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1007/s11837-020-04155-y"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1007/s42979-021-00592-x"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1007/978-3-031-19433-7_45"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1007/978-3-031-43126-5_12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1016/j.cirp.2023.04.091"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1016/j.csbj.2014.11.005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1016/j.rcim.2023.102545"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1038/nrg3920"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1038/s41598-021-83926-2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1093/nar/gkad393"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1097/PR9.0000000000001112"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1109/BigData52589.2021.9671303"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1109/ICET56601.2022.10004679"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1109/ICIBA56860.2023.10165591"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1109/ICIRCA.2018.8597302"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1109/ISBI53787.2023.10230745"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1109/ITSC45102.2020.9294439"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1145/2988544"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1145/3543508"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.1609/aaai.v36i10.21333"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.23919/CCC58697.2023.10240985"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.3390/info13070334"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.3390/info13110526"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10.7166/34-3-2941"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JPMorgan_Chase_&amp;_Co"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Meta_AR/VR_Assistant"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#ConferencePaper"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Paper"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#publishedBy"/>
+                <Class IRI="#Conference"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#JournalPaper"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Paper"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#publishedBy"/>
+                <Class IRI="#Journal"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Addition"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BookSection"/>
+        <Class IRI="#Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classification"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Combination"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comparaison"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Conference"/>
+        <Class IRI="#Publisher"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConferencePaper"/>
+        <Class IRI="#Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Critique"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Definition"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Explanation"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exploration"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extension"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Improvement"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Journal"/>
+        <Class IRI="#Publisher"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JournalPaper"/>
+        <Class IRI="#Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Preprint"/>
+        <Class IRI="#Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proof"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proposal"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Review"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Survey"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test"/>
+        <Class IRI="#Idea"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Database"/>
+        <NamedIndividual IRI="#ACMDigitalLibrary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#AI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Journal"/>
+        <NamedIndividual IRI="#AIMagazine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Aditya_Kalyanpur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Antonis_Klironomos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#Applications"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Baifan_Zhou"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#BigSemantics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#Bosch_Center_for_Artificial_Intelligence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#CV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Chaitanya_Baru"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Combination"/>
+        <NamedIndividual IRI="#CombiningKG_CV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#CombiningKG_CV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Combination"/>
+        <NamedIndividual IRI="#CombiningKG_NLP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#CombiningKG_NLP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Combination"/>
+        <NamedIndividual IRI="#Combining_rdflib_ExeKGLib"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#Combining_rdflib_ExeKGLib"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#Cycorp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#DL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#DataScienceWorkFlow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Denny_Vrandecic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Douglas_B._Lenat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#Elemental_Cognition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Conference"/>
+        <NamedIndividual IRI="#European_Semantic_Web_Conference"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Evgeny_Kharlamov"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exploration"/>
+        <NamedIndividual IRI="#ExeKGBLibWorkStepsExploration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#ExeKGBLibWorkStepsExploration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#ExeKGLib"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#ExeKGLibTasks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Classification"/>
+        <NamedIndividual IRI="#ExeKGLibTasksClassification"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#ExeKGLibTasksClassification"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Test"/>
+        <NamedIndividual IRI="#ExeKGLibTest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#ExeKGLibWorkSteps"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#ExecutableGeneration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanation"/>
+        <NamedIndividual IRI="#ExecutableGenerationExplanation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#ExecutableGenerationExplanation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#FeatureEngineering"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Gad-Elrab_Mohamed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Site"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#GraphDatabases"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#GraphKnowledgeBase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Classification"/>
+        <NamedIndividual IRI="#GraphKnowledgeBaseClassification"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#GraphKnowledgeBaseClassification"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Heiko_Paulheim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#History"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#HumanCuration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Comparaison"/>
+        <NamedIndividual IRI="#HumanMachineCurationComparaison"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#HumanMachineCurationComparaison"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#James_Hendler"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Juan_Sequeda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Classification"/>
+        <NamedIndividual IRI="#KGApplicationClassification"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#KGApplicationClassification"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#KGApplications"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Definition"/>
+        <NamedIndividual IRI="#KGDefinition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#KGDefinition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#KnowledgeRepresentation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Kuansan_Wang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Comparaison"/>
+        <NamedIndividual IRI="#LittleBigSemanticComparaison"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#LittleBigSemanticComparaison"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#LittleSemantics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#ML"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#MLPipeLine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#MLPipeLineExplainability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#MLPipeLineExplainabilityImprovement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Improvement"/>
+        <NamedIndividual IRI="#MLPipeLineExplainabilityImprovement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#MachineCuration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#Machine_Learning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Michael_Genesereth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#Microsoft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#NLP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Naren_Chittar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Site"/>
+        <NamedIndividual IRI="#Norway"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#Ontologies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#OpenKnowledgeNetwork"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#Oslo_Metropolitan_University"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#PipeLine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#PipeLineExecution"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanation"/>
+        <NamedIndividual IRI="#PipeLineExecutionExplanation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#PipeLineExecutionExplanation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanation"/>
+        <NamedIndividual IRI="#PipelineExplanation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#PipelineExplanation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#PipelineRepresentation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#PythonLibrary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#PythonLibraryProposal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Proposal"/>
+        <NamedIndividual IRI="#PythonLibraryProposal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#RWTH_Aachen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#Renssalear_Polytechnic_Institute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Database"/>
+        <NamedIndividual IRI="#ResearchGate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Database"/>
+        <NamedIndividual IRI="#SNDL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Comparaison"/>
+        <NamedIndividual IRI="#SN_KGComparaison"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#SN_KGComparaison"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#SPARQL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#San_Diego_Supercomputer_Center"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Site"/>
+        <NamedIndividual IRI="#San_diego"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#SemanticNetworks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#SemanticTecknologies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#Software"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#Stanford_University"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#StatisticPipeLine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#SurveyOnKG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Survey"/>
+        <NamedIndividual IRI="#SurveyOnKG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#SymbolicRepresentation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Comparaison"/>
+        <NamedIndividual IRI="#SymbolicVectorRepresentationComparaison"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#SymbolicVectorRepresentationComparaison"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#Taxonomies"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#TripleStores"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Site"/>
+        <NamedIndividual IRI="#USA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#University_of_Mannheim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#University_of_Oslo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#VectorRepresentation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#VectorRepresentationLimitation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Vinay_K._Chaudhri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#VizPipeLine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#Vizualization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#Wikimedia_Foundation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Xin_Luna_Dong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Zhipeng_Tan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Zhuoxun_Zheng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Database"/>
+        <NamedIndividual IRI="#arXiv"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#data.world"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Idea"/>
+        <NamedIndividual IRI="#dataScienceWorkflowImprovement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Improvement"/>
+        <NamedIndividual IRI="#dataScienceWorkflowImprovement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#organizationOfInformation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#rdflib"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#KeyWord"/>
+        <NamedIndividual IRI="#representationOfInformation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1002/aaai.12038"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1007/s11837-020-04155-y"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1007/s42979-021-00592-x"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BookSection"/>
+        <NamedIndividual IRI="#10.1007/978-3-031-19433-7_45"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1007/978-3-031-43126-5_12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1016/j.cirp.2023.04.091"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1016/j.csbj.2014.11.005"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1016/j.rcim.2023.102545"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1038/nrg3920"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1038/s41598-021-83926-2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1093/nar/gkad393"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1097/PR9.0000000000001112"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConferencePaper"/>
+        <NamedIndividual IRI="#10.1109/BigData52589.2021.9671303"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConferencePaper"/>
+        <NamedIndividual IRI="#10.1109/ICET56601.2022.10004679"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1109/ICIBA56860.2023.10165591"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1109/ICIRCA.2018.8597302"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1109/ISBI53787.2023.10230745"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1109/ITSC45102.2020.9294439"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1145/2988544"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.1145/3543508"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConferencePaper"/>
+        <NamedIndividual IRI="#10.1609/aaai.v36i10.21333"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.23919/CCC58697.2023.10240985"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.3390/info13070334"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.3390/info13110526"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConferencePaper"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JournalPaper"/>
+        <NamedIndividual IRI="#10.7166/34-3-2941"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#JPMorgan_Chase_&amp;_Co"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#Meta_AR/VR_Assistant"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#ML"/>
+        <NamedIndividual IRI="#Machine_Learning"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#ACMDigitalLibrary"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#AI"/>
+        <NamedIndividual IRI="#FeatureEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#AI"/>
+        <NamedIndividual IRI="#ML"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#AI"/>
+        <NamedIndividual IRI="#Machine_Learning"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#published"/>
+        <NamedIndividual IRI="#AIMagazine"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Aditya_Kalyanpur"/>
+        <NamedIndividual IRI="#Elemental_Cognition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Aditya_Kalyanpur"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Antonis_Klironomos"/>
+        <NamedIndividual IRI="#Bosch_Center_for_Artificial_Intelligence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Antonis_Klironomos"/>
+        <NamedIndividual IRI="#University_of_Mannheim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Antonis_Klironomos"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Baifan_Zhou"/>
+        <NamedIndividual IRI="#University_of_Oslo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Baifan_Zhou"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sitedIn"/>
+        <NamedIndividual IRI="#Bosch_Center_for_Artificial_Intelligence"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Chaitanya_Baru"/>
+        <NamedIndividual IRI="#San_Diego_Supercomputer_Center"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Chaitanya_Baru"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#For"/>
+        <NamedIndividual IRI="#CombiningKG_CV"/>
+        <NamedIndividual IRI="#VectorRepresentationLimitation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#CombiningKG_CV"/>
+        <NamedIndividual IRI="#CV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#CombiningKG_CV"/>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#For"/>
+        <NamedIndividual IRI="#CombiningKG_NLP"/>
+        <NamedIndividual IRI="#VectorRepresentationLimitation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#CombiningKG_NLP"/>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#CombiningKG_NLP"/>
+        <NamedIndividual IRI="#NLP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#For"/>
+        <NamedIndividual IRI="#Combining_rdflib_ExeKGLib"/>
+        <NamedIndividual IRI="#ExecutableGeneration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#Combining_rdflib_ExeKGLib"/>
+        <NamedIndividual IRI="#ExeKGLib"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#Combining_rdflib_ExeKGLib"/>
+        <NamedIndividual IRI="#rdflib"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sitedIn"/>
+        <NamedIndividual IRI="#Cycorp"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#DL"/>
+        <NamedIndividual IRI="#CV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#DL"/>
+        <NamedIndividual IRI="#NLP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Denny_Vrandecic"/>
+        <NamedIndividual IRI="#Wikimedia_Foundation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Denny_Vrandecic"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Douglas_B._Lenat"/>
+        <NamedIndividual IRI="#Cycorp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Douglas_B._Lenat"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sitedIn"/>
+        <NamedIndividual IRI="#Elemental_Cognition"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citedBy"/>
+        <NamedIndividual IRI="#European_Semantic_Web_Conference"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#published"/>
+        <NamedIndividual IRI="#European_Semantic_Web_Conference"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Evgeny_Kharlamov"/>
+        <NamedIndividual IRI="#Bosch_Center_for_Artificial_Intelligence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Evgeny_Kharlamov"/>
+        <NamedIndividual IRI="#University_of_Oslo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Evgeny_Kharlamov"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#ExeKGBLibWorkStepsExploration"/>
+        <NamedIndividual IRI="#ExeKGLibWorkSteps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedIn"/>
+        <NamedIndividual IRI="#ExeKGLib"/>
+        <NamedIndividual IRI="#MLPipeLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Into"/>
+        <NamedIndividual IRI="#ExeKGLibTasksClassification"/>
+        <NamedIndividual IRI="#FeatureEngineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Into"/>
+        <NamedIndividual IRI="#ExeKGLibTasksClassification"/>
+        <NamedIndividual IRI="#ML"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Into"/>
+        <NamedIndividual IRI="#ExeKGLibTasksClassification"/>
+        <NamedIndividual IRI="#Vizualization"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#ExeKGLibTasksClassification"/>
+        <NamedIndividual IRI="#ExeKGLibTasks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#ExeKGLibTest"/>
+        <NamedIndividual IRI="#ExeKGLib"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#ExeKGLibWorkSteps"/>
+        <NamedIndividual IRI="#ExeKGLibWorkSteps"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#ExecutableGeneration"/>
+        <NamedIndividual IRI="#MLPipeLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#ExecutableGenerationExplanation"/>
+        <NamedIndividual IRI="#ExecutableGeneration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Gad-Elrab_Mohamed"/>
+        <NamedIndividual IRI="#Bosch_Center_for_Artificial_Intelligence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Gad-Elrab_Mohamed"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Into"/>
+        <NamedIndividual IRI="#GraphKnowledgeBaseClassification"/>
+        <NamedIndividual IRI="#Ontologies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Into"/>
+        <NamedIndividual IRI="#GraphKnowledgeBaseClassification"/>
+        <NamedIndividual IRI="#SemanticNetworks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Into"/>
+        <NamedIndividual IRI="#GraphKnowledgeBaseClassification"/>
+        <NamedIndividual IRI="#Taxonomies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Into"/>
+        <NamedIndividual IRI="#GraphKnowledgeBaseClassification"/>
+        <NamedIndividual IRI="#TripleStores"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#GraphKnowledgeBaseClassification"/>
+        <NamedIndividual IRI="#GraphKnowledgeBase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Heiko_Paulheim"/>
+        <NamedIndividual IRI="#University_of_Mannheim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Heiko_Paulheim"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#HumanMachineCurationComparaison"/>
+        <NamedIndividual IRI="#HumanCuration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#HumanMachineCurationComparaison"/>
+        <NamedIndividual IRI="#MachineCuration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#James_Hendler"/>
+        <NamedIndividual IRI="#Renssalear_Polytechnic_Institute"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#James_Hendler"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Juan_Sequeda"/>
+        <NamedIndividual IRI="#data.world"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Juan_Sequeda"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Into"/>
+        <NamedIndividual IRI="#KGApplicationClassification"/>
+        <NamedIndividual IRI="#organizationOfInformation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Into"/>
+        <NamedIndividual IRI="#KGApplicationClassification"/>
+        <NamedIndividual IRI="#representationOfInformation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#KGDefinition"/>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+        <NamedIndividual IRI="#PythonLibrary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedIn"/>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+        <NamedIndividual IRI="#ExeKGLib"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedIn"/>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+        <NamedIndividual IRI="#PipelineRepresentation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Kuansan_Wang"/>
+        <NamedIndividual IRI="#Microsoft"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Kuansan_Wang"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#LittleBigSemanticComparaison"/>
+        <NamedIndividual IRI="#BigSemantics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#LittleBigSemanticComparaison"/>
+        <NamedIndividual IRI="#LittleSemantics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#ML"/>
+        <NamedIndividual IRI="#DL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#ML"/>
+        <NamedIndividual IRI="#MLPipeLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#MLPipeLine"/>
+        <NamedIndividual IRI="#MLPipeLineExplainability"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#MLPipeLineExplainabilityImprovement"/>
+        <NamedIndividual IRI="#MLPipeLineExplainability"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#Machine_Learning"/>
+        <NamedIndividual IRI="#DL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Michael_Genesereth"/>
+        <NamedIndividual IRI="#Stanford_University"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Michael_Genesereth"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#NLP"/>
+        <NamedIndividual IRI="#VectorRepresentation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Naren_Chittar"/>
+        <NamedIndividual IRI="#JPMorgan_Chase_&amp;_Co"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Naren_Chittar"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedIn"/>
+        <NamedIndividual IRI="#Ontologies"/>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sitedIn"/>
+        <NamedIndividual IRI="#Oslo_Metropolitan_University"/>
+        <NamedIndividual IRI="#Norway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#PipeLine"/>
+        <NamedIndividual IRI="#MLPipeLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#PipeLine"/>
+        <NamedIndividual IRI="#PipeLineExecution"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#PipeLine"/>
+        <NamedIndividual IRI="#StatisticPipeLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#PipeLine"/>
+        <NamedIndividual IRI="#VizPipeLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#PipeLineExecutionExplanation"/>
+        <NamedIndividual IRI="#PipeLineExecution"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#For"/>
+        <NamedIndividual IRI="#PipelineExplanation"/>
+        <NamedIndividual IRI="#MLPipeLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#For"/>
+        <NamedIndividual IRI="#PipelineExplanation"/>
+        <NamedIndividual IRI="#StatisticPipeLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#For"/>
+        <NamedIndividual IRI="#PipelineExplanation"/>
+        <NamedIndividual IRI="#VizPipeLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#PipelineExplanation"/>
+        <NamedIndividual IRI="#KGApplications"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#PythonLibrary"/>
+        <NamedIndividual IRI="#ExeKGLib"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#PythonLibrary"/>
+        <NamedIndividual IRI="#rdflib"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#For"/>
+        <NamedIndividual IRI="#PythonLibraryProposal"/>
+        <NamedIndividual IRI="#MLPipeLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#PythonLibraryProposal"/>
+        <NamedIndividual IRI="#PythonLibrary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sitedIn"/>
+        <NamedIndividual IRI="#RWTH_Aachen"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sitedIn"/>
+        <NamedIndividual IRI="#Renssalear_Polytechnic_Institute"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#ResearchGate"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#SNDL"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#SNDL"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#SN_KGComparaison"/>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#SN_KGComparaison"/>
+        <NamedIndividual IRI="#SemanticNetworks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sitedIn"/>
+        <NamedIndividual IRI="#San_Diego_Supercomputer_Center"/>
+        <NamedIndividual IRI="#San_diego"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#SemanticNetworks"/>
+        <NamedIndividual IRI="#NLP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#SemanticTecknologies"/>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#SemanticTecknologies"/>
+        <NamedIndividual IRI="#Ontologies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#SemanticTecknologies"/>
+        <NamedIndividual IRI="#SemanticNetworks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#SemanticTecknologies"/>
+        <NamedIndividual IRI="#Taxonomies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#SemanticTecknologies"/>
+        <NamedIndividual IRI="#TripleStores"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#Software"/>
+        <NamedIndividual IRI="#PythonLibrary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#Software"/>
+        <NamedIndividual IRI="#SPARQL"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sitedIn"/>
+        <NamedIndividual IRI="#Stanford_University"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#SurveyOnKG"/>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#SymbolicVectorRepresentationComparaison"/>
+        <NamedIndividual IRI="#SymbolicRepresentation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#SymbolicVectorRepresentationComparaison"/>
+        <NamedIndividual IRI="#VectorRepresentation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#TripleStores"/>
+        <NamedIndividual IRI="#NLP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sitedIn"/>
+        <NamedIndividual IRI="#University_of_Mannheim"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sitedIn"/>
+        <NamedIndividual IRI="#University_of_Oslo"/>
+        <NamedIndividual IRI="#Norway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#usedIn"/>
+        <NamedIndividual IRI="#VectorRepresentation"/>
+        <NamedIndividual IRI="#NLP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Vinay_K._Chaudhri"/>
+        <NamedIndividual IRI="#Stanford_University"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Vinay_K._Chaudhri"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSubField"/>
+        <NamedIndividual IRI="#Vizualization"/>
+        <NamedIndividual IRI="#VizPipeLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sitedIn"/>
+        <NamedIndividual IRI="#Wikimedia_Foundation"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Xin_Luna_Dong"/>
+        <NamedIndividual IRI="#Meta_AR/VR_Assistant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Xin_Luna_Dong"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Zhipeng_Tan"/>
+        <NamedIndividual IRI="#Bosch_Center_for_Artificial_Intelligence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Zhipeng_Tan"/>
+        <NamedIndividual IRI="#RWTH_Aachen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Zhipeng_Tan"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Zhuoxun_Zheng"/>
+        <NamedIndividual IRI="#Bosch_Center_for_Artificial_Intelligence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksFor"/>
+        <NamedIndividual IRI="#Zhuoxun_Zheng"/>
+        <NamedIndividual IRI="#Oslo_Metropolitan_University"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#wrote"/>
+        <NamedIndividual IRI="#Zhuoxun_Zheng"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#contains"/>
+        <NamedIndividual IRI="#arXiv"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sitedIn"/>
+        <NamedIndividual IRI="#data.world"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#dataScienceWorkflowImprovement"/>
+        <NamedIndividual IRI="#DataScienceWorkFlow"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Into"/>
+        <NamedIndividual IRI="#representationOfInformation"/>
+        <NamedIndividual IRI="#Ontologies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Into"/>
+        <NamedIndividual IRI="#representationOfInformation"/>
+        <NamedIndividual IRI="#SemanticNetworks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Into"/>
+        <NamedIndividual IRI="#representationOfInformation"/>
+        <NamedIndividual IRI="#Taxonomies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Of"/>
+        <NamedIndividual IRI="#representationOfInformation"/>
+        <NamedIndividual IRI="#GraphKnowledgeBase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aimsToProvide"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <NamedIndividual IRI="#SurveyOnKG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <NamedIndividual IRI="#SemanticTecknologies"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <NamedIndividual IRI="#CombiningKG_CV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <NamedIndividual IRI="#CombiningKG_NLP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <NamedIndividual IRI="#GraphKnowledgeBaseClassification"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <NamedIndividual IRI="#HumanMachineCurationComparaison"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <NamedIndividual IRI="#KGApplicationClassification"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <NamedIndividual IRI="#KGDefinition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <NamedIndividual IRI="#LittleBigSemanticComparaison"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <NamedIndividual IRI="#SN_KGComparaison"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <NamedIndividual IRI="#SymbolicVectorRepresentationComparaison"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citedBy"/>
+        <NamedIndividual IRI="#10.1002/aaai.12038"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citedBy"/>
+        <NamedIndividual IRI="#10.1007/s11837-020-04155-y"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citedBy"/>
+        <NamedIndividual IRI="#10.1007/s42979-021-00592-x"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citedBy"/>
+        <NamedIndividual IRI="#10.1007/978-3-031-19433-7_45"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cites"/>
+        <NamedIndividual IRI="#10.1007/978-3-031-43126-5_12"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cites"/>
+        <NamedIndividual IRI="#10.1016/j.cirp.2023.04.091"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citedBy"/>
+        <NamedIndividual IRI="#10.1016/j.rcim.2023.102545"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citedBy"/>
+        <NamedIndividual IRI="#10.1038/nrg3920"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citedBy"/>
+        <NamedIndividual IRI="#10.1038/s41598-021-83926-2"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cites"/>
+        <NamedIndividual IRI="#10.1093/nar/gkad393"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cites"/>
+        <NamedIndividual IRI="#10.1097/PR9.0000000000001112"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cites"/>
+        <NamedIndividual IRI="#10.1109/ICET56601.2022.10004679"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cites"/>
+        <NamedIndividual IRI="#10.1109/ICIBA56860.2023.10165591"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citedBy"/>
+        <NamedIndividual IRI="#10.1109/ICIRCA.2018.8597302"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cites"/>
+        <NamedIndividual IRI="#10.1109/ISBI53787.2023.10230745"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citedBy"/>
+        <NamedIndividual IRI="#10.1109/ITSC45102.2020.9294439"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cites"/>
+        <NamedIndividual IRI="#10.1145/3543508"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#citedBy"/>
+        <NamedIndividual IRI="#10.1609/aaai.v36i10.21333"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cites"/>
+        <NamedIndividual IRI="#10.23919/CCC58697.2023.10240985"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cites"/>
+        <NamedIndividual IRI="#10.3390/info13070334"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cites"/>
+        <NamedIndividual IRI="#10.3390/info13110526"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#aimsToProvide"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <NamedIndividual IRI="#PythonLibraryProposal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <NamedIndividual IRI="#KnowledgeGraph"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <NamedIndividual IRI="#Machine_Learning"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasKeyword"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <NamedIndividual IRI="#PythonLibrary"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <NamedIndividual IRI="#Combining_rdflib_ExeKGLib"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <NamedIndividual IRI="#ExeKGBLibWorkStepsExploration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <NamedIndividual IRI="#ExeKGLibTasksClassification"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <NamedIndividual IRI="#ExeKGLibTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <NamedIndividual IRI="#MLPipeLineExplainabilityImprovement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <NamedIndividual IRI="#PipeLineExecutionExplanation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <NamedIndividual IRI="#PipelineExplanation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#provides"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <NamedIndividual IRI="#dataScienceWorkflowImprovement"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cites"/>
+        <NamedIndividual IRI="#10.7166/34-3-2941"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sitedIn"/>
+        <NamedIndividual IRI="#JPMorgan_Chase_&amp;_Co"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SJRQuartile"/>
+        <NamedIndividual IRI="#AIMagazine"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SJRScore"/>
+        <NamedIndividual IRI="#AIMagazine"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.875</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#impactFactor"/>
+        <NamedIndividual IRI="#AIMagazine"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.542</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number"/>
+        <NamedIndividual IRI="#APPLICATIONS_OF_KNOWLEDGE_GRAPHS"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#impactFactor"/>
+        <NamedIndividual IRI="#European_Semantic_Web_Conference"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rank"/>
+        <NamedIndividual IRI="#European_Semantic_Web_Conference"/>
+        <Literal>A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number"/>
+        <NamedIndividual IRI="#Human_curation_versus_machine_curation"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number"/>
+        <NamedIndividual IRI="#Introduction"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number"/>
+        <NamedIndividual IRI="#KNOWLEDGE_GRAPH_DEFINITION"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number"/>
+        <NamedIndividual IRI="#Little_semantics_versus_big_semantics"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number"/>
+        <NamedIndividual IRI="#Representing_information_for_AI_algorithms"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number"/>
+        <NamedIndividual IRI="#SUMMARY_AND_CONCLUSION"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Number"/>
+        <NamedIndividual IRI="#Symbolic_representation_versus_vector_representation"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#depositDate"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <Literal>2021-09-23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#language"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <Literal>English</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#paperType"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <Literal>survey</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#publishDate"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <Literal>2021-09-25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#reference"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <Literal>Chaudhri, Vinay K., Chaitanya Baru, Naren Chittar, Xin Luna Dong, Michael
+Genesereth, James Hendler, Aditya Kalyanpur, et al. « Knowledge Graphs:
+Introduction, History, and Perspectives ». AI Magazine 43, no 1 (mars 2022): 17-29.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#10.1002/aaai.12033"/>
+        <Literal>Knowledge graphs: Introduction, history, and perspectives</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#depositDate"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <Literal>2023-05-04</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#language"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <Literal>English</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#reference"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <Literal>Klironomos, Antonis, et al. &quot;ExeKGLib: Knowledge Graphs-Empowered Machine
+Learning Analytics.&quot; arXiv preprint arXiv:2305.02966 (2023).</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#10.48550/arXiv:2305.02966"/>
+        <Literal>ExeKGLib: Knowledge Graphs-Empowered Machine Learning Analytics</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ExtendsOn"/>
+        <ObjectProperty IRI="#paperRelationshipWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#For"/>
+        <ObjectProperty IRI="#keywordRelationship"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ImrovesOn"/>
+        <ObjectProperty IRI="#paperRelationshipWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Into"/>
+        <ObjectProperty IRI="#keywordRelationship"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Of"/>
+        <ObjectProperty IRI="#keywordRelationship"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#citedBy"/>
+        <ObjectProperty IRI="#paperRelationshipWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cites"/>
+        <ObjectProperty IRI="#paperRelationshipWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#compares"/>
+        <ObjectProperty IRI="#paperRelationshipWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPrequelOf"/>
+        <ObjectProperty IRI="#paperRelationshipWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSequelOf"/>
+        <ObjectProperty IRI="#paperRelationshipWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#keywordRelationship"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#reviews"/>
+        <ObjectProperty IRI="#paperRelationshipWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#tests"/>
+        <ObjectProperty IRI="#paperRelationshipWith"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#citedBy"/>
+        <ObjectProperty IRI="#cites"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty IRI="#foundIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSubField"/>
+        <ObjectProperty IRI="#isSubFieldOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPrequelOf"/>
+        <ObjectProperty IRI="#isSequelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#published"/>
+        <ObjectProperty IRI="#publishedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#writtenBy"/>
+        <ObjectProperty IRI="#wrote"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#aimsToProvide"/>
+        <Class IRI="#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#foundIn"/>
+        <Class IRI="#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubField"/>
+        <Class IRI="#KeyWord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPrequelOf"/>
+        <Class IRI="#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubFieldOf"/>
+        <Class IRI="#KeyWord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#paperRelationshipWith"/>
+        <Class IRI="#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#provides"/>
+        <Class IRI="#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#published"/>
+        <Class IRI="#Publisher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedIn"/>
+        <Class IRI="#KeyWord"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wrote"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#foundIn"/>
+        <Class IRI="#Database"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubField"/>
+        <Class IRI="#KeyWord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPrequelOf"/>
+        <Class IRI="#Paper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubFieldOf"/>
+        <Class IRI="#KeyWord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#paperRelationshipWith"/>
+        <Class IRI="#Paper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#published"/>
+        <Class IRI="#Paper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#usedIn"/>
+        <Class IRI="#KeyWord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wrote"/>
+        <Class IRI="#Paper"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#abstract"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#depositDate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#publishDate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#rank"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#title"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SJRQuartile"/>
+        <Class IRI="#Journal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SJRScore"/>
+        <Class IRI="#Journal"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#abstract"/>
+        <Class IRI="#Paper"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#depositDate"/>
+        <Class IRI="#Paper"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fullName"/>
+        <Class IRI="#Author"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hIndex"/>
+        <Class IRI="#Author"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#impactFactor"/>
+        <Class IRI="#Paper"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#language"/>
+        <Class IRI="#Paper"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#mainIdea"/>
+        <Class IRI="#Paper"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#publishDate"/>
+        <Class IRI="#Paper"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rank"/>
+        <Class IRI="#Conference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#reference"/>
+        <Class IRI="#Paper"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#summary"/>
+        <Class IRI="#Paper"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title"/>
+        <Class IRI="#Paper"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#SJRQuartile"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SJRScore"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#abstract"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#creationDate"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#depositDate"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#impactFactor"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#mainIdea"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#paperType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#publishDate"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rank"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#summary"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

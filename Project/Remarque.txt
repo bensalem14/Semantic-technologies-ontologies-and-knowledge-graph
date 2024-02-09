@@ -1,0 +1,6 @@
+Remarque
+
+- Nous envoyons le fichier dans le format owl demandé ainsi que dans le format rdf pour le graphdb.
+
+- La deuxième requête fonctionne bien sur graphdb mais pas sur protege.
+
