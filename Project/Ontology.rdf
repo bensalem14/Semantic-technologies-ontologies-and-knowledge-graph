@@ -1,0 +1,2073 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ReadingReport="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#">
+    <Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport">
+        <rdfs:comment>Reading Report Ontology</rdfs:comment>
+        <rdfs:label>ReadingReport</rdfs:label>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExtendsOn -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExtendsOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#paperRelationshipWith"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#For -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#For">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#keywordRelationship"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ImrovesOn -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ImrovesOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#paperRelationshipWith"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Into -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Into">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#keywordRelationship"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Of -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#keywordRelationship"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#aimsToProvide -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#aimsToProvide">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#citedBy -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#citedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#paperRelationshipWith"/>
+        <inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#cites"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#cites -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#cites">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#paperRelationshipWith"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#compares -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#compares">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#paperRelationshipWith"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#contains -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#contains">
+        <inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#foundIn"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#foundIn -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#foundIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Database"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#hasKeyword -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#hasKeyword"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#hasSubField -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#hasSubField">
+        <inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#isSubFieldOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#isPrequelOf -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#isPrequelOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#paperRelationshipWith"/>
+        <inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#isSequelOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#isSequelOf -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#isSequelOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#paperRelationshipWith"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#isSubFieldOf -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#isSubFieldOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#keywordRelationship -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#keywordRelationship">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#paperRelationshipWith -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#paperRelationshipWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#partOf -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#partOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#provides -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#provides">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#published -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#published">
+        <inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#publishedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Publisher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#publishedBy -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#publishedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#reviews -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#reviews">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#paperRelationshipWith"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#sitedIn -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#sitedIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#tests -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#tests">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#paperRelationshipWith"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#usedIn -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#usedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#worksFor -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#worksFor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#writtenBy -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#writtenBy">
+        <inverseOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#wrote"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#wrote -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#wrote">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Description -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Description"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Number -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Number"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SJRQuartile -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SJRQuartile">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Journal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SJRScore -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SJRScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Journal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#abstract -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#abstract">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#creationDate -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#creationDate">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#depositDate -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#depositDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#fullName -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#fullName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#hIndex -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#hIndex">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#impactFactor -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#impactFactor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#language -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#language">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#mainIdea -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#mainIdea">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#paperType -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#paperType">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#publishDate -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#publishDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#rank -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#rank">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Conference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#reference -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#reference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#summary -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#summary">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#title -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#title">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Addition -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Addition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#BookSection -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#BookSection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Classification -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Classification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Combination -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Combination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Comparaison -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Comparaison">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Conference -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Conference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Publisher"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ConferencePaper -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ConferencePaper">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#publishedBy"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Conference"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Critique -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Critique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Database -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Database"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Definition -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Definition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Explanation -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Explanation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Exploration -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Exploration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Extension -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Extension">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Improvement -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Improvement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Journal -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Journal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Publisher"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+                    <Restriction>
+                        <onProperty rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#publishedBy"/>
+                        <someValuesFrom rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Journal"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Preprint -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Preprint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Paper"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Proof -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Proof">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Proposal -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Proposal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Publisher -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Publisher"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Review -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Review">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Site -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Site"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Survey -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Survey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Test -->
+
+    <Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ACMDigitalLibrary -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ACMDigitalLibrary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Database"/>
+        <ReadingReport:contains rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#AI -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#FeatureEngineering"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ML"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Machine_Learning"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#AIMagazine -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#AIMagazine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Journal"/>
+        <ReadingReport:published rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+        <ReadingReport:SJRQuartile rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</ReadingReport:SJRQuartile>
+        <ReadingReport:SJRScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.875</ReadingReport:SJRScore>
+        <ReadingReport:impactFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.542</ReadingReport:impactFactor>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#APPLICATIONS_OF_KNOWLEDGE_GRAPHS -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#APPLICATIONS_OF_KNOWLEDGE_GRAPHS">
+        <ReadingReport:Number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</ReadingReport:Number>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Aditya_Kalyanpur -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Aditya_Kalyanpur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Elemental_Cognition"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Antonis_Klironomos -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Antonis_Klironomos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Bosch_Center_for_Artificial_Intelligence"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#University_of_Mannheim"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Applications -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Applications">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Baifan_Zhou -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Baifan_Zhou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#University_of_Oslo"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#BigSemantics -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#BigSemantics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Bosch_Center_for_Artificial_Intelligence -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Bosch_Center_for_Artificial_Intelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+        <ReadingReport:sitedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Germany"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#CV -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#CV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Chaitanya_Baru -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Chaitanya_Baru">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#San_Diego_Supercomputer_Center"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#CombiningKG_CV -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#CombiningKG_CV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Combination"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:For rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#VectorRepresentationLimitation"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#CV"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KnowledgeGraph"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#CombiningKG_NLP -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#CombiningKG_NLP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Combination"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:For rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#VectorRepresentationLimitation"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KnowledgeGraph"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#NLP"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Combining_rdflib_ExeKGLib -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Combining_rdflib_ExeKGLib">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Combination"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:For rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExecutableGeneration"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLib"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#rdflib"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Cycorp -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Cycorp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+        <ReadingReport:sitedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#USA"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#DL -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#DL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#CV"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#NLP"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#DataScienceWorkFlow -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#DataScienceWorkFlow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Denny_Vrandecic -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Denny_Vrandecic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Wikimedia_Foundation"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Douglas_B._Lenat -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Douglas_B._Lenat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Cycorp"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Elemental_Cognition -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Elemental_Cognition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+        <ReadingReport:sitedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#USA"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#European_Semantic_Web_Conference -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#European_Semantic_Web_Conference">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Conference"/>
+        <ReadingReport:citedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+        <ReadingReport:published rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+        <ReadingReport:impactFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.8</ReadingReport:impactFactor>
+        <ReadingReport:rank>A</ReadingReport:rank>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Evgeny_Kharlamov -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Evgeny_Kharlamov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Bosch_Center_for_Artificial_Intelligence"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#University_of_Oslo"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGBLibWorkStepsExploration -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGBLibWorkStepsExploration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Exploration"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLibWorkSteps"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLib -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLib">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:usedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLine"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLibTasks -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLibTasks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLibTasksClassification -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLibTasksClassification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Classification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:Into rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#FeatureEngineering"/>
+        <ReadingReport:Into rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ML"/>
+        <ReadingReport:Into rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Vizualization"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLibTasks"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLibTest -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLibTest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Test"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLib"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLibWorkSteps -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLibWorkSteps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLibWorkSteps"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExecutableGeneration -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExecutableGeneration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLine"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExecutableGenerationExplanation -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExecutableGenerationExplanation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Explanation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExecutableGeneration"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#FeatureEngineering -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#FeatureEngineering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Gad-Elrab_Mohamed -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Gad-Elrab_Mohamed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Bosch_Center_for_Artificial_Intelligence"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Germany -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Site"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#GraphDatabases -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#GraphDatabases">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#GraphKnowledgeBase -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#GraphKnowledgeBase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#GraphKnowledgeBaseClassification -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#GraphKnowledgeBaseClassification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Classification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:Into rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Ontologies"/>
+        <ReadingReport:Into rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SemanticNetworks"/>
+        <ReadingReport:Into rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Taxonomies"/>
+        <ReadingReport:Into rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#TripleStores"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#GraphKnowledgeBase"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Heiko_Paulheim -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Heiko_Paulheim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#University_of_Mannheim"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#History -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#History">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#HumanCuration -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#HumanCuration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#HumanMachineCurationComparaison -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#HumanMachineCurationComparaison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Comparaison"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#HumanCuration"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MachineCuration"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Human_curation_versus_machine_curation -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Human_curation_versus_machine_curation">
+        <ReadingReport:Number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</ReadingReport:Number>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Introduction -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Introduction">
+        <ReadingReport:Number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</ReadingReport:Number>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#James_Hendler -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#James_Hendler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Renssalear_Polytechnic_Institute"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Juan_Sequeda -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Juan_Sequeda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#data.world"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KGApplicationClassification -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KGApplicationClassification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Classification"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:Into rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#organizationOfInformation"/>
+        <ReadingReport:Into rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#representationOfInformation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KGApplications -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KGApplications">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KGDefinition -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KGDefinition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Definition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KnowledgeGraph"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KNOWLEDGE_GRAPH_DEFINITION -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KNOWLEDGE_GRAPH_DEFINITION">
+        <ReadingReport:Number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</ReadingReport:Number>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KnowledgeGraph -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KnowledgeGraph">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PythonLibrary"/>
+        <ReadingReport:usedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLib"/>
+        <ReadingReport:usedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipelineRepresentation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KnowledgeRepresentation -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KnowledgeRepresentation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Kuansan_Wang -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Kuansan_Wang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Microsoft"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#LittleBigSemanticComparaison -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#LittleBigSemanticComparaison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Comparaison"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#BigSemantics"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#LittleSemantics"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#LittleSemantics -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#LittleSemantics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Little_semantics_versus_big_semantics -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Little_semantics_versus_big_semantics">
+        <ReadingReport:Number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9</ReadingReport:Number>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ML -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ML">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <sameAs rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Machine_Learning"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#DL"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLine"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Machine_Learning -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Machine_Learning"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLine -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLineExplainability"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLineExplainability -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLineExplainability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLineExplainabilityImprovement -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLineExplainabilityImprovement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Improvement"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLineExplainability"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MachineCuration -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MachineCuration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Machine_Learning -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Machine_Learning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#DL"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Michael_Genesereth -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Michael_Genesereth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Stanford_University"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Microsoft -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Microsoft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#NLP -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#NLP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#VectorRepresentation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Naren_Chittar -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Naren_Chittar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JPMorgan_Chase_&amp;_Co"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Norway -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Norway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Site"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Ontologies -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Ontologies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:usedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KnowledgeGraph"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#OpenKnowledgeNetwork -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#OpenKnowledgeNetwork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Oslo_Metropolitan_University -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Oslo_Metropolitan_University">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+        <ReadingReport:sitedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Norway"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipeLine -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipeLine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLine"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipeLineExecution"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#StatisticPipeLine"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#VizPipeLine"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipeLineExecution -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipeLineExecution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipeLineExecutionExplanation -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipeLineExecutionExplanation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Explanation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipeLineExecution"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipelineExplanation -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipelineExplanation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Explanation"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:For rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLine"/>
+        <ReadingReport:For rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#StatisticPipeLine"/>
+        <ReadingReport:For rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#VizPipeLine"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KGApplications"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipelineRepresentation -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipelineRepresentation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PythonLibrary -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PythonLibrary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLib"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#rdflib"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PythonLibraryProposal -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PythonLibraryProposal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Proposal"/>
+        <ReadingReport:For rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLine"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PythonLibrary"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#RWTH_Aachen -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#RWTH_Aachen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+        <ReadingReport:sitedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Germany"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Renssalear_Polytechnic_Institute -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Renssalear_Polytechnic_Institute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+        <ReadingReport:sitedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#USA"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Representing_information_for_AI_algorithms -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Representing_information_for_AI_algorithms">
+        <ReadingReport:Number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</ReadingReport:Number>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ResearchGate -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ResearchGate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Database"/>
+        <ReadingReport:contains rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SNDL -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SNDL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Database"/>
+        <ReadingReport:contains rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+        <ReadingReport:contains rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SN_KGComparaison -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SN_KGComparaison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Comparaison"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KnowledgeGraph"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SemanticNetworks"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SPARQL -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SPARQL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SUMMARY_AND_CONCLUSION -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SUMMARY_AND_CONCLUSION">
+        <ReadingReport:Number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</ReadingReport:Number>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#San_Diego_Supercomputer_Center -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#San_Diego_Supercomputer_Center">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+        <ReadingReport:sitedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#San_diego"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#San_diego -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#San_diego">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Site"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SemanticNetworks -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SemanticNetworks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#NLP"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SemanticTecknologies -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SemanticTecknologies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KnowledgeGraph"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Ontologies"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SemanticNetworks"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Taxonomies"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#TripleStores"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Software -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Software">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PythonLibrary"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SPARQL"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Stanford_University -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Stanford_University">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+        <ReadingReport:sitedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#USA"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#StatisticPipeLine -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#StatisticPipeLine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SurveyOnKG -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SurveyOnKG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Survey"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KnowledgeGraph"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SymbolicRepresentation -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SymbolicRepresentation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SymbolicVectorRepresentationComparaison -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SymbolicVectorRepresentationComparaison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Comparaison"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SymbolicRepresentation"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#VectorRepresentation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Symbolic_representation_versus_vector_representation -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Symbolic_representation_versus_vector_representation">
+        <ReadingReport:Number rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</ReadingReport:Number>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Taxonomies -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Taxonomies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#TripleStores -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#TripleStores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#NLP"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#USA -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#USA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Site"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#University_of_Mannheim -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#University_of_Mannheim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+        <ReadingReport:sitedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Germany"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#University_of_Oslo -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#University_of_Oslo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+        <ReadingReport:sitedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Norway"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#VectorRepresentation -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#VectorRepresentation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:usedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#NLP"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#VectorRepresentationLimitation -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#VectorRepresentationLimitation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Vinay_K._Chaudhri -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Vinay_K._Chaudhri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Stanford_University"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#VizPipeLine -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#VizPipeLine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Vizualization -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Vizualization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:hasSubField rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#VizPipeLine"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Wikimedia_Foundation -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Wikimedia_Foundation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+        <ReadingReport:sitedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#USA"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Xin_Luna_Dong -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Xin_Luna_Dong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Meta_AR/VR_Assistant"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Zhipeng_Tan -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Zhipeng_Tan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Bosch_Center_for_Artificial_Intelligence"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#RWTH_Aachen"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Zhuoxun_Zheng -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Zhuoxun_Zheng">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Author"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Bosch_Center_for_Artificial_Intelligence"/>
+        <ReadingReport:worksFor rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Oslo_Metropolitan_University"/>
+        <ReadingReport:wrote rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#arXiv -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#arXiv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Database"/>
+        <ReadingReport:contains rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#data.world -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#data.world">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+        <ReadingReport:sitedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#USA"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#dataScienceWorkflowImprovement -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#dataScienceWorkflowImprovement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Idea"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Improvement"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#DataScienceWorkFlow"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#organizationOfInformation -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#organizationOfInformation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#rdflib -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#rdflib">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#representationOfInformation -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#representationOfInformation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KeyWord"/>
+        <ReadingReport:Into rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Ontologies"/>
+        <ReadingReport:Into rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SemanticNetworks"/>
+        <ReadingReport:Into rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Taxonomies"/>
+        <ReadingReport:Of rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#GraphKnowledgeBase"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:aimsToProvide rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SurveyOnKG"/>
+        <ReadingReport:hasKeyword rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KnowledgeGraph"/>
+        <ReadingReport:hasKeyword rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SemanticTecknologies"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#CombiningKG_CV"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#CombiningKG_NLP"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#GraphKnowledgeBaseClassification"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#HumanMachineCurationComparaison"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KGApplicationClassification"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KGDefinition"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#LittleBigSemanticComparaison"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SN_KGComparaison"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#SymbolicVectorRepresentationComparaison"/>
+        <ReadingReport:depositDate>2021-09-23</ReadingReport:depositDate>
+        <ReadingReport:language>English</ReadingReport:language>
+        <ReadingReport:paperType>survey</ReadingReport:paperType>
+        <ReadingReport:publishDate>2021-09-25</ReadingReport:publishDate>
+        <ReadingReport:reference>Chaudhri, Vinay K., Chaitanya Baru, Naren Chittar, Xin Luna Dong, Michael
+Genesereth, James Hendler, Aditya Kalyanpur, et al. « Knowledge Graphs:
+Introduction, History, and Perspectives ». AI Magazine 43, no 1 (mars 2022): 17-29.</ReadingReport:reference>
+        <ReadingReport:title>Knowledge graphs: Introduction, history, and perspectives</ReadingReport:title>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12038 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12038">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:citedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1007/s11837-020-04155-y -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1007/s11837-020-04155-y">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:citedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1007/s42979-021-00592-x -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1007/s42979-021-00592-x">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:citedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1007/978-3-031-19433-7_45 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1007/978-3-031-19433-7_45">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#BookSection"/>
+        <ReadingReport:citedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1007/978-3-031-43126-5_12 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1007/978-3-031-43126-5_12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:cites rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1016/j.cirp.2023.04.091 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1016/j.cirp.2023.04.091">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:cites rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1016/j.csbj.2014.11.005 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1016/j.csbj.2014.11.005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1016/j.rcim.2023.102545 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1016/j.rcim.2023.102545">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:citedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1038/nrg3920 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1038/nrg3920">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:citedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1038/s41598-021-83926-2 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1038/s41598-021-83926-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:citedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1093/nar/gkad393 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1093/nar/gkad393">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:cites rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1097/PR9.0000000000001112 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1097/PR9.0000000000001112">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:cites rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1109/BigData52589.2021.9671303 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1109/BigData52589.2021.9671303">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ConferencePaper"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1109/ICET56601.2022.10004679 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1109/ICET56601.2022.10004679">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ConferencePaper"/>
+        <ReadingReport:cites rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1109/ICIBA56860.2023.10165591 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1109/ICIBA56860.2023.10165591">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:cites rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1109/ICIRCA.2018.8597302 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1109/ICIRCA.2018.8597302">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:citedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1109/ISBI53787.2023.10230745 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1109/ISBI53787.2023.10230745">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:cites rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1109/ITSC45102.2020.9294439 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1109/ITSC45102.2020.9294439">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:citedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1145/2988544 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1145/2988544">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1145/3543508 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1145/3543508">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:cites rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1609/aaai.v36i10.21333 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1609/aaai.v36i10.21333">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ConferencePaper"/>
+        <ReadingReport:citedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.23919/CCC58697.2023.10240985 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.23919/CCC58697.2023.10240985">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:cites rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.3390/info13070334 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.3390/info13070334">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:cites rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.3390/info13110526 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.3390/info13110526">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:cites rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.48550/arXiv:2305.02966">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ConferencePaper"/>
+        <ReadingReport:aimsToProvide rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PythonLibraryProposal"/>
+        <ReadingReport:hasKeyword rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#KnowledgeGraph"/>
+        <ReadingReport:hasKeyword rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Machine_Learning"/>
+        <ReadingReport:hasKeyword rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PythonLibrary"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Combining_rdflib_ExeKGLib"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGBLibWorkStepsExploration"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLibTasksClassification"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#ExeKGLibTest"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#MLPipeLineExplainabilityImprovement"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipeLineExecutionExplanation"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#PipelineExplanation"/>
+        <ReadingReport:provides rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#dataScienceWorkflowImprovement"/>
+        <ReadingReport:depositDate>2023-05-04</ReadingReport:depositDate>
+        <ReadingReport:language>English</ReadingReport:language>
+        <ReadingReport:reference>Klironomos, Antonis, et al. &quot;ExeKGLib: Knowledge Graphs-Empowered Machine
+Learning Analytics.&quot; arXiv preprint arXiv:2305.02966 (2023).</ReadingReport:reference>
+        <ReadingReport:title>ExeKGLib: Knowledge Graphs-Empowered Machine Learning Analytics</ReadingReport:title>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.7166/34-3-2941 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.7166/34-3-2941">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JournalPaper"/>
+        <ReadingReport:cites rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#10.1002/aaai.12033"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JPMorgan_Chase_&amp;_Co -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#JPMorgan_Chase_&amp;_Co">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+        <ReadingReport:sitedIn rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#USA"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Meta_AR/VR_Assistant -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Meta_AR/VR_Assistant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/11/ReadingReport#Organization"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

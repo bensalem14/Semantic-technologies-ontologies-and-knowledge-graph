@@ -1,0 +1,135 @@
+@base <http://example.com/base/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http%3A//dbpedia.org/resource/Ovid> a <Writer>;
+  <name> "Ovid";
+  <birthplace> <http%3A//dbpedia.org/resource/Roman_Republic>, <http%3A//dbpedia.org/resource/Italy_%28Ancient_Rome%29>,
+    <http%3A//dbpedia.org/resource/Sulmona>;
+  <wirted> <http%3A//dbpedia.org/resource/Ars_Amatoria>;
+  <birth> "-043-03-20" .
+
+<Ovid> a <name> .
+
+<-043-03-20> a <birth> .
+
+<http%3A//dbpedia.org/resource/Roman_Republic> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Ars_Amatoria> a <book> .
+
+<http%3A//dbpedia.org/resource/Italy_%28Ancient_Rome%29> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Sulmona> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Horace> a <Writer>;
+  <name> "Horace";
+  <birthplace> <http%3A//dbpedia.org/resource/Roman_Republic>, <http%3A//dbpedia.org/resource/Venosa>,
+    <http%3A//dbpedia.org/resource/Italy_%28Roman_Empire%29>;
+  <wirted> <http%3A//dbpedia.org/resource/Hints_from_Hesiod>;
+  <birth> "-065-12-08" .
+
+<Horace> a <name> .
+
+<-065-12-08> a <birth> .
+
+<http%3A//dbpedia.org/resource/Hints_from_Hesiod> a <book> .
+
+<http%3A//dbpedia.org/resource/Venosa> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Italy_%28Roman_Empire%29> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Muhammad_al-Bukhari> a <Writer>;
+  <name> "Muḥammad ibn Ismā‘īl al-Bukhārī";
+  <birthplace> <http%3A//dbpedia.org/resource/Bukhara>, <http%3A//dbpedia.org/resource/Abbasid_Caliphate>;
+  <wirted> <http%3A//dbpedia.org/resource/Al-Adab_al-Mufrad>, <http%3A//dbpedia.org/resource/The_Great_History>;
+  <birth> "0810-07-25T00:00:00Z" .
+
+<Muḥammad%20ibn%20Ismā‘īl%20al-Bukhārī> a <name> .
+
+<0810-07-25T00%3A00%3A00Z> a <birth> .
+
+<http%3A//dbpedia.org/resource/Bukhara> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Al-Adab_al-Mufrad> a <book> .
+
+<http%3A//dbpedia.org/resource/Abbasid_Caliphate> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/The_Great_History> a <book> .
+
+<http%3A//dbpedia.org/resource/Al-Juwayni> a <Writer>;
+  <name> "Imam al-Haramayn Dhia' ul-Din al-Juwayni", "امام الحرمین ضیاءُ الدین الجُوَینی";
+  <birthplace> <http%3A//dbpedia.org/resource/Persia>, <http%3A//dbpedia.org/resource/Greater_Khorasan>,
+    <http%3A//dbpedia.org/resource/Nishapur>, <http%3A//dbpedia.org/resource/Iran>, <http%3A//dbpedia.org/resource/Jowayin_County>,
+    <http%3A//dbpedia.org/resource/Razavi_Khorasan_Province>;
+  <wirted> <http%3A//dbpedia.org/resource/A_Guide_to_Conclusive_Proofs_for_the_Principles_of_Belief>;
+  <birth> "1028-02-23T00:00:00Z" .
+
+<Imam%20al-Haramayn%20Dhia%27%20ul-Din%20al-Juwayni> a <name> .
+
+<1028-02-23T00%3A00%3A00Z> a <birth> .
+
+<http%3A//dbpedia.org/resource/Persia> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/A_Guide_to_Conclusive_Proofs_for_the_Principles_of_Belief>
+  a <book> .
+
+<http%3A//dbpedia.org/resource/Greater_Khorasan> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Nishapur> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Iran> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Jowayin_County> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Razavi_Khorasan_Province> a <birthplace> .
+
+<امام%20الحرمین%20ضیاءُ%20الدین%20الجُوَینی> a <name> .
+
+<http%3A//dbpedia.org/resource/Giovanni_Boccaccio> a <Writer>;
+  <name> "Giovanni Boccaccio";
+  <birthplace> <http%3A//dbpedia.org/resource/Republic_of_Florence>, <http%3A//dbpedia.org/resource/Certaldo>;
+  <wirted> <http%3A//dbpedia.org/resource/The_Decameron>;
+  <birth> "1313-06-24T00:00:00Z" .
+
+<Giovanni%20Boccaccio> a <name> .
+
+<1313-06-24T00%3A00%3A00Z> a <birth> .
+
+<http%3A//dbpedia.org/resource/Republic_of_Florence> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/The_Decameron> a <book> .
+
+<http%3A//dbpedia.org/resource/Certaldo> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Ibn_Hajar_al-Asqalani> a <Writer>;
+  <name> "Ibn Ḥajar al-‘Asqalānī";
+  <birthplace> <http%3A//dbpedia.org/resource/Cairo>, <http%3A//dbpedia.org/resource/Mamluk_Sultanate_%28Cairo%29>;
+  <wirted> <http%3A//dbpedia.org/resource/Lisan_al-Mizan>, <http%3A//dbpedia.org/resource/Bulugh_al-Maram>;
+  <birth> "1372-02-26T00:00:00Z" .
+
+<Ibn%20Ḥajar%20al-‘Asqalānī> a <name> .
+
+<1372-02-26T00%3A00%3A00Z> a <birth> .
+
+<http%3A//dbpedia.org/resource/Cairo> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Lisan_al-Mizan> a <book> .
+
+<http%3A//dbpedia.org/resource/Mamluk_Sultanate_%28Cairo%29> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Bulugh_al-Maram> a <book> .
+
+<http%3A//dbpedia.org/resource/Marko_Marulić> a <Writer>;
+  <name> "Marko Marulić";
+  <birthplace> <http%3A//dbpedia.org/resource/Republic_of_Venice>, <http%3A//dbpedia.org/resource/Croatia>;
+  <wirted> <http%3A//dbpedia.org/resource/Judita>;
+  <birth> "1450-08-27T00:00:00Z" .
+
+<Marko%20Marulić> a <name> .
+
+<1450-08-27T00%3A00%3A00Z> a <birth> .
+
+<http%3A//dbpedia.org/resource/Republic_of_Venice> a <birthplace> .
+
+<http%3A//dbpedia.org/resource/Judita> a <book> .
+
+<http%3A//dbpedia.org/resource/Croatia> a <birthplace> .

@@ -1,0 +1,54 @@
+@base <http://example.com/base/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dp: <http://example.com/base/> .
+
+<http%3A//dbpedia.org/resource/Herman_Vedel> a dp:Artist;
+  dp:name "Herman Vedel";
+  dp:birthplace <http%3A//dbpedia.org/resource/Denmark>, <http%3A//dbpedia.org/resource/Copenhagen>;
+  dp:notablework <http%3A//dbpedia.org/resource/Frank_Lebby_Stanton>, <http%3A//dbpedia.org/resource/Antonio_Diego_Voci>,
+    <http%3A//dbpedia.org/resource/Lorin_Morgan-Richards>, <http%3A//dbpedia.org/resource/William_Buelow_Gould>,
+    <http%3A//dbpedia.org/resource/Tarik_O%27Regan>, <http%3A//dbpedia.org/resource/Ted_Noten>,
+    <http%3A//dbpedia.org/resource/Kay_Sage>;
+  dp:birth "0175-02-28T00:00:00Z" .
+
+dp:Herman%20Vedel a dp:name .
+
+<http%3A//dbpedia.org/resource/Denmark> a dp:birthplace .
+
+<http%3A//dbpedia.org/resource/Frank_Lebby_Stanton> a dp:notablework .
+
+dp:0175-02-28T00%3A00%3A00Z a dp:birth .
+
+<http%3A//dbpedia.org/resource/Copenhagen> a dp:birthplace .
+
+<http%3A//dbpedia.org/resource/Antonio_Diego_Voci> a dp:notablework .
+
+<http%3A//dbpedia.org/resource/Lorin_Morgan-Richards> a dp:notablework .
+
+<http%3A//dbpedia.org/resource/William_Buelow_Gould> a dp:notablework .
+
+<http%3A//dbpedia.org/resource/Tarik_O%27Regan> a dp:notablework .
+
+<http%3A//dbpedia.org/resource/Ted_Noten> a dp:notablework .
+
+<http%3A//dbpedia.org/resource/Kay_Sage> a dp:notablework .
+
+<http%3A//dbpedia.org/resource/Amir_Khusrau> a dp:Artist;
+  dp:name "Amir Khusrau";
+  dp:birthplace <http%3A//dbpedia.org/resource/Delhi_Sultanate>, <http%3A//dbpedia.org/resource/Patiyali>,
+    <http%3A//dbpedia.org/resource/Uttar_Pradesh>, <http%3A//dbpedia.org/resource/India>;
+  dp:notablework <http%3A//dbpedia.org/resource/Frank_Lebby_Stanton>, <http%3A//dbpedia.org/resource/Antonio_Diego_Voci>,
+    <http%3A//dbpedia.org/resource/Lorin_Morgan-Richards>, <http%3A//dbpedia.org/resource/William_Buelow_Gould>;
+  dp:birth "1253-05-26T00:00:00Z" .
+
+dp:Amir%20Khusrau a dp:name .
+
+<http%3A//dbpedia.org/resource/Delhi_Sultanate> a dp:birthplace .
+
+dp:1253-05-26T00%3A00%3A00Z a dp:birth .
+
+<http%3A//dbpedia.org/resource/Patiyali> a dp:birthplace .
+
+<http%3A//dbpedia.org/resource/Uttar_Pradesh> a dp:birthplace .
+
+<http%3A//dbpedia.org/resource/India> a dp:birthplace .
